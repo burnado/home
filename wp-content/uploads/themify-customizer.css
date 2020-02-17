@@ -1,0 +1,91 @@
+/* Themify Customize Styling */
+body {	
+	font-family: "Roboto";	font-weight:normal;
+ 
+}
+h1 {	
+	font-family: "Roboto";	font-weight:500;
+	font-size:95px;
+ 
+}
+.header-classic #headerwrap, #headerwrap {	background: none;
+	background-color: #000000; 
+}
+#pagewrap #headerwrap.fixed-header, .transparent-header #pagewrap #headerwrap.fixed-header {	background: none;
+	background-color: rgba(0,0,0,0.73); 
+}
+body[class*="themify"] #site-logo a {	
+	font-family: "Roboto";	font-weight:bold;
+	font-size:50px;
+	line-height:55px;
+
+	color: #ffffff; 
+}
+body[class*="themify"] #site-logo a img {		width: 197px;
+	height: 64px; 
+}
+#site-logo {		position:fixed;
+
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px; 
+}
+#main-nav a, #main-nav > li > a, .transparent-header #main-nav a {	
+	color: #ffffff; 
+}
+#main-nav-wrap #main-nav a:hover, #main-nav-wrap #main-nav > li > a:hover {	
+	color: #d5d5d5; 
+}
+#main-nav-wrap #main-nav .current_page_item > a, #main-nav .current-menu-item > a, #main-nav > .current_page_item > a, #main-nav > .current-menu-item > a {	
+	color: #aaaaaa; 
+}
+#footerwrap {	background: none;
+	background-color: #000000; 
+}
+#footer {	
+	color: #ffffff; 
+}
+#footer a {	
+	color: #ffffff; 
+}
+#footer a:hover {	
+	color: #4c4c4c; 
+}
+@media screen and (max-width: 1280px) { /* Themify Customize Styling */
+.header-classic #headerwrap, #headerwrap {	background: none;
+	background-color: #000000; 
+}
+body[class*="themify"] #site-logo a {		font-weight:bold;
+
+	color: #ffffff; 
+}
+#main-nav a, #main-nav > li > a, .transparent-header #main-nav a {	
+	color: #ffffff; 
+}
+#main-nav-wrap #main-nav a:hover, #main-nav-wrap #main-nav > li > a:hover {	
+	color: #d5d5d5; 
+}
+#main-nav-wrap #main-nav .current_page_item > a, #main-nav .current-menu-item > a, #main-nav > .current_page_item > a, #main-nav > .current-menu-item > a {	
+	color: #aaaaaa; 
+}
+ }@media screen and (max-width: 768px) { /* Themify Customize Styling */
+body[class*="themify"] #site-logo a img {		width: 197px;
+	height: 64px; 
+}
+ }@media screen and (max-width: 680px) { /* Themify Customize Styling */
+.header-classic #headerwrap, #headerwrap {	background: none;
+	background-color: #000000; 
+}
+body[class*="themify"] #site-logo a {	
+	font-family: "Roboto";	font-weight:bold;
+
+	color: #ffffff; 
+}
+#main-nav a, #main-nav > li > a, .transparent-header #main-nav a {	
+	color: #ffffff; 
+}
+ }.mobile_menu_active #headerwrap .sidemenu-on a, .mobile_menu_active #headerwrap #main-nav a, .mobile_menu_active #headerwrap #main-nav ul a { 
+	color: #000000; }.mobile_menu_active #headerwrap .sidemenu-on a:hover, .mobile_menu_active #headerwrap #main-nav a:hover, .mobile_menu_active #headerwrap #main-nav ul a:hover { 
+	color: #4c4c4c; }.mobile_menu_active.header-leftpane #pagewrap #headerwrap .header-icons #menu-icon, .mobile_menu_active.header-rightpane #pagewrap #headerwrap .header-icons #menu-icon, #headerwrap #menu-icon, .mobile_menu_active.header-horizontal #headerwrap #menu-icon { 
+	color: #ffffff; }
