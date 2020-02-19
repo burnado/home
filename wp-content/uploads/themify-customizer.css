@@ -1,0 +1,77 @@
+/* Themify Customize Styling */
+body {	
+	font-family: "Arial", "Helvetica", sans-serif;	font-weight:normal;
+ 
+}
+h1 {	
+	font-family: "Arial", "Helvetica", sans-serif;	font-weight:600;
+	font-size:95px;
+ 
+}
+.header-classic #headerwrap, #headerwrap {	background: none;
+	background-color: #000000; 
+}
+#pagewrap #headerwrap.fixed-header, .transparent-header #pagewrap #headerwrap.fixed-header {	background: none;
+	background-color: rgba(0,0,0,0.67); 
+}
+body[class*="themify"] #site-logo a {	
+	font-family: "Arial", "Helvetica", sans-serif;	font-weight:bold;
+
+	color: #ffffff; 
+}
+body[class*="themify"] #site-logo a img {	
+	height: 32px; 
+}
+#main-nav a {	
+	font-family: "Arial", "Helvetica", sans-serif; 
+}
+#main-nav a, #main-nav > li > a, .transparent-header #main-nav a {	
+	color: #ffffff; 
+}
+#main-nav-wrap #main-nav a:hover, #main-nav-wrap #main-nav > li > a:hover {	
+	color: #d5d5d5; 
+}
+#main-nav-wrap #main-nav .current_page_item > a, #main-nav .current-menu-item > a, #main-nav > .current_page_item > a, #main-nav > .current-menu-item > a {	
+	color: #aaaaaa; 
+}
+#main-nav-wrap #main-nav .current_page_item a:hover,  #main-nav .current-menu-item a:hover {	
+	color: #ffffff; 
+}
+#footerwrap {	background: none;
+	background-color: #f6f6f6; 
+}
+#footer {	
+	color: #000000; 
+}
+#footer, #footer-logo, .footer-nav a, .footer-text {	
+	font-family: "Arial", "Helvetica", sans-serif; 
+}
+#footer a {	
+	font-family: "Arial", "Helvetica", sans-serif;
+	color: #000000; 
+}
+#footer a:hover {	
+	font-family: "Arial", "Helvetica", sans-serif;
+	color: #4c4c4c; 
+}
+@media screen and (max-width: 1280px) { /* Themify Customize Styling */
+body[class*="themify"] #site-logo a img {	
+	height: 32px; 
+}
+ }@media screen and (max-width: 768px) { /* Themify Customize Styling */
+body[class*="themify"] #site-logo a img {	
+	height: 32px; 
+}
+ }@media screen and (max-width: 680px) { /* Themify Customize Styling */
+body[class*="themify"] #site-logo a {	
+	font-family: "Arial", "Helvetica", sans-serif;	font-weight:bold;
+ 
+}
+#main-nav a {	
+	font-family: "Arial", "Helvetica", sans-serif; 
+}
+ }.mobile_menu_active #headerwrap .sidemenu-on nav li a { 
+	font-family: "Arial", "Helvetica", sans-serif; }.mobile_menu_active #headerwrap .sidemenu-on a, .mobile_menu_active #headerwrap #main-nav a, .mobile_menu_active #headerwrap #main-nav ul a { 
+	color: #000000; }.mobile_menu_active #headerwrap .sidemenu-on a:hover, .mobile_menu_active #headerwrap #main-nav a:hover, .mobile_menu_active #headerwrap #main-nav ul a:hover { 
+	color: #4c4c4c; }.mobile_menu_active.header-leftpane #pagewrap #headerwrap .header-icons #menu-icon, .mobile_menu_active.header-rightpane #pagewrap #headerwrap .header-icons #menu-icon, #headerwrap #menu-icon, .mobile_menu_active.header-horizontal #headerwrap #menu-icon { 
+	color: #ffffff; }
