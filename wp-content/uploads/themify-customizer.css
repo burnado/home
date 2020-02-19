@@ -19,7 +19,7 @@ body[class*="themify"] #site-logo a {
 
 	color: #ffffff; 
 }
-body[class*="themify"] #site-logo a img {	
+body[class*="themify"] #site-logo a img {		width: 127px;
 	height: 32px; 
 }
 #main-nav a {	
@@ -55,11 +55,11 @@ body[class*="themify"] #site-logo a img {
 	color: #4c4c4c; 
 }
 @media screen and (max-width: 1280px) { /* Themify Customize Styling */
-body[class*="themify"] #site-logo a img {	
+body[class*="themify"] #site-logo a img {		width: 127px;
 	height: 32px; 
 }
  }@media screen and (max-width: 768px) { /* Themify Customize Styling */
-body[class*="themify"] #site-logo a img {	
+body[class*="themify"] #site-logo a img {		width: 127px;
 	height: 32px; 
 }
  }@media screen and (max-width: 680px) { /* Themify Customize Styling */
