@@ -40,11 +40,196 @@ img.emoji {
 <link rel='stylesheet' id='learndash_quiz_front_css-css'  href='https://burnado.github.io/home/wp-content/plugins/sfwd-lms/themes/legacy/templates/learndash_quiz_front.min.css?ver=3.0.6.1' type='text/css' media='all' />
 <link rel='stylesheet' id='jquery-dropdown-css-css'  href='https://burnado.github.io/home/wp-content/plugins/sfwd-lms/assets/css/jquery.dropdown.min.css?ver=3.0.6.1' type='text/css' media='all' />
 <link rel='stylesheet' id='learndash-front-css'  href='https://burnado.github.io/home/wp-content/plugins/sfwd-lms/themes/ld30/assets/css/learndash.min.css?ver=1.0' type='text/css' media='all' />
+<style id='learndash-front-inline-css' type='text/css'>
+		.ld-resp-video {
+			margin: 1em 0;
+			position: relative;
+			padding-bottom: 52%;
+			padding-top: 30px;
+			height: 0;
+			overflow: hidden;
+		}
+		.ld-resp-video iframe,
+		.ld-resp-video object,
+		.ld-resp-video embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		@media screen and (max-width: 700px) {
+			.ld-resp-video {
+				position: relative;
+				padding-bottom: 47%;
+				padding-top: 30px;
+				height: 0;
+				overflow: hidden;
+			}
+		}
+		
+		.learndash-wrapper .ld-item-list .ld-item-list-item.ld-is-next,
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label:focus-within {
+			border-color: #5486bf;
+		}
+
+		/*
+		.learndash-wrapper a:not(.ld-button):not(#quiz_continue_link):not(.ld-focus-menu-link):not(.btn-blue):not(#quiz_continue_link):not(.ld-js-register-account):not(#ld-focus-mode-course-heading):not(#btn-join):not(.ld-item-name):not(.ld-table-list-item-preview):not(.ld-lesson-item-preview-heading),
+		 */
+
+		.learndash-wrapper .ld-breadcrumbs a,
+		.learndash-wrapper .ld-lesson-item.ld-is-current-lesson .ld-lesson-item-preview-heading,
+		.learndash-wrapper .ld-lesson-item.ld-is-current-lesson .ld-lesson-title,
+		.learndash-wrapper .ld-primary-color-hover:hover,
+		.learndash-wrapper .ld-primary-color,
+		.learndash-wrapper .ld-primary-color-hover:hover,
+		.learndash-wrapper .ld-primary-color,
+		.learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab.ld-active,
+		.learndash-wrapper .ld-button.ld-button-transparent,
+		.learndash-wrapper .ld-button.ld-button-reverse,
+		.learndash-wrapper .ld-icon-certificate,
+		.learndash-wrapper .ld-login-modal .ld-login-modal-login .ld-modal-heading,
+		#wpProQuiz_user_content a,
+		.learndash-wrapper .ld-item-list .ld-item-list-item a.ld-item-name:hover {
+			color: #5486bf !important;
+		}
+
+
+		.learndash-wrapper .ld-primary-background,
+		.learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab.ld-active:after {
+			background: #5486bf !important;
+		}
+
+		.learndash-wrapper .ld-course-navigation .ld-lesson-item.ld-is-current-lesson .ld-status-incomplete {
+			border-color: #5486bf !important;
+		}
+
+
+		.learndash-wrapper .ld-loading::before {
+			border-top:3px solid #5486bf !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_reviewDiv .wpProQuiz_reviewQuestion li.wpProQuiz_reviewQuestionTarget,
+		.learndash-wrapper .ld-button:hover:not(.learndash-link-previous-incomplete):not(.ld-button-transparent),
+		#learndash-tooltips .ld-tooltip:after,
+		#learndash-tooltips .ld-tooltip,
+		.learndash-wrapper .ld-primary-background,
+		.learndash-wrapper .btn-join,
+		.learndash-wrapper #btn-join,
+		.learndash-wrapper .ld-button:not(.ld-js-register-account):not(.learndash-link-previous-incomplete):not(.ld-button-transparent),
+		.learndash-wrapper .ld-expand-button,
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_button,
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_button2,
+		.learndash-wrapper .wpProQuiz_content a#quiz_continue_link,
+		.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation-heading,
+		.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-focus-sidebar-trigger,
+		.learndash-wrapper .ld-focus-comments .form-submit #submit,
+		.learndash-wrapper .ld-login-modal input[type='submit'],
+		.learndash-wrapper .ld-login-modal .ld-login-modal-register,
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_certificate a.btn-blue,
+		.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu .ld-user-menu-items a,
+		#wpProQuiz_user_content table.wp-list-table thead th,
+		#wpProQuiz_overlay_close,
+		.learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
+			background-color: #5486bf !important;
+		}
+
+
+		.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu .ld-user-menu-items:before {
+			border-bottom-color: #5486bf !important;
+		}
+
+		.learndash-wrapper .ld-button.ld-button-transparent:hover {
+			background: transparent !important;
+		}
+
+		.learndash-wrapper .ld-focus .ld-focus-header .sfwd-mark-complete .learndash_mark_complete_button,
+		.learndash-wrapper .ld-focus .ld-focus-header #sfwd-mark-complete #learndash_mark_complete_button,
+		.learndash-wrapper .ld-button.ld-button-transparent,
+		.learndash-wrapper .ld-button.ld-button-alternate,
+		.learndash-wrapper .ld-expand-button.ld-button-alternate {
+			background-color:transparent !important;
+		}
+
+		.learndash-wrapper .ld-focus-header .ld-user-menu .ld-user-menu-items a,
+		.learndash-wrapper .ld-button.ld-button-reverse:hover,
+		.learndash-wrapper .ld-alert-success .ld-alert-icon.ld-icon-certificate,
+		.learndash-wrapper .ld-alert-warning .ld-button:not(.learndash-link-previous-incomplete),
+		.learndash-wrapper .ld-primary-background.ld-status {
+			color:white !important;
+		}
+
+		.learndash-wrapper .ld-status.ld-status-unlocked {
+			background-color: rgba(84,134,191,0.2) !important;
+			color: #5486bf !important;
+		}
+
+
+		
+		.learndash-wrapper #quiz_continue_link,
+		.learndash-wrapper .ld-secondary-background,
+		.learndash-wrapper .learndash_mark_complete_button,
+		.learndash-wrapper #learndash_mark_complete_button,
+		.learndash-wrapper .ld-status-complete,
+		.learndash-wrapper .ld-alert-success .ld-button,
+		.learndash-wrapper .ld-alert-success .ld-alert-icon {
+			background-color: #5486bf !important;
+		}
+
+		.learndash-wrapper .ld-secondary-color-hover:hover,
+		.learndash-wrapper .ld-secondary-color,
+		.learndash-wrapper .ld-focus .ld-focus-header .sfwd-mark-complete .learndash_mark_complete_button,
+		.learndash-wrapper .ld-focus .ld-focus-header #sfwd-mark-complete #learndash_mark_complete_button,
+		.learndash-wrapper .ld-focus .ld-focus-header .sfwd-mark-complete:after {
+			color: #5486bf !important;
+		}
+
+		.learndash-wrapper .ld-secondary-in-progress-icon {
+			border-left-color: #5486bf !important;
+			border-top-color: #5486bf !important;
+		}
+
+		.learndash-wrapper .ld-alert-success {
+			border-color: #5486bf !important;
+			background-color: transparent !important;
+		}
+
+		
+		.learndash-wrapper .ld-alert-warning {
+			background-color:transparent;
+		}
+
+		.learndash-wrapper .ld-status-waiting,
+		.learndash-wrapper .ld-alert-warning .ld-alert-icon {
+			background-color: #0066bf !important;
+		}
+
+		.learndash-wrapper .ld-tertiary-color-hover:hover,
+		.learndash-wrapper .ld-tertiary-color,
+		.learndash-wrapper .ld-alert-warning {
+			color: #0066bf !important;
+		}
+
+		.learndash-wrapper .ld-tertiary-background {
+			background-color: #0066bf !important;
+		}
+
+		.learndash-wrapper .ld-alert-warning {
+			border-color: #0066bf !important;
+		}
+
+		.learndash-wrapper .ld-tertiary-background,
+		.learndash-wrapper .ld-alert-warning .ld-alert-icon {
+			color:white !important;
+		}
+
+		
+</style>
 <link rel='stylesheet' id='theme-style-css'  href='https://burnado.github.io/home/wp-content/themes/themify-ultra/style.min.css?ver=2.6.6' type='text/css' media='all' />
 <link rel='stylesheet' id='themify-media-queries-css'  href='https://burnado.github.io/home/wp-content/themes/themify-ultra/media-queries.min.css?ver=2.6.6' type='text/css' media='all' />
 <link rel='stylesheet' id='ultra-header-css'  href='https://burnado.github.io/home/wp-content/themes/themify-ultra/styles/header-top-bar.min.css?ver=2.6.6' type='text/css' media='all' />
 <link rel='stylesheet' id='themify-builder-13-generated-fonts-css'  href='http://fonts.googleapis.com/css?family=Roboto:400,400,400&#038;subset=latin' type='text/css' media='all' />
-<link rel='stylesheet' id='themify-builder-13-generated-css'  href='https://burnado.github.io/home/wp-content/uploads/themify-css/themify-builder-13-generated.css?ver=1582281776' type='text/css' media='all' />
+<link rel='stylesheet' id='themify-builder-13-generated-css'  href='https://burnado.github.io/home/wp-content/uploads/themify-css/themify-builder-13-generated.css?ver=1582284358' type='text/css' media='all' />
 <link rel='stylesheet' id='themify-customize-css'  href='https://burnado.github.io/home/wp-content/uploads/themify-customizer.css?ver=20.02.21.10.42.19' type='text/css' media='all' />
 <link rel='stylesheet' id='themify-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700&#038;subset=latin' type='text/css' media='all' />
 <script type='text/javascript' src='https://burnado.github.io/home/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
@@ -266,6 +451,54 @@ img.emoji {
 	    <!-- /row_inner -->
 	</div>
 	<!-- /module_row -->
+		<!-- module_row -->
+	<div  class="themify_builder_row module_row clearfix module_row_1 themify_builder_13_row module_row_13-1 tb_j5u9308">
+	    	    <div class="row_inner col_align_top" >
+			<div  class="module_column tb-column col-full first tb_13_column module_column_0 module_column_13-1-0 tb_bn87309">
+	    	    	        <div class="tb-column-inner">
+		    <!-- module widget -->
+<div  class="module module-widget tb_1d19119   ">
+	<div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><h2>Our Most Popular Courses</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac eros ut dui bibendum ultricies. Maecenas egestas fringilla semper.</p>
+<div id="ld_course_list"><div id="ld-course-list-content-2f03b97ab51efe00449b53a93c07fbeb" class="ld-course-list-content" data-shortcode-atts="{&quot;include_outer_wrapper&quot;:&quot;true&quot;,&quot;num&quot;:20,&quot;paged&quot;:1,&quot;post_type&quot;:&quot;sfwd-courses&quot;,&quot;post_status&quot;:&quot;publish&quot;,&quot;order&quot;:&quot;asc&quot;,&quot;orderby&quot;:&quot;ID&quot;,&quot;user_id&quot;:false,&quot;mycourses&quot;:null,&quot;post__in&quot;:null,&quot;course_id&quot;:&quot;&quot;,&quot;meta_key&quot;:&quot;&quot;,&quot;meta_value&quot;:&quot;&quot;,&quot;meta_compare&quot;:&quot;&quot;,&quot;tag&quot;:&quot;&quot;,&quot;tag_id&quot;:0,&quot;tag__and&quot;:&quot;&quot;,&quot;tag__in&quot;:&quot;&quot;,&quot;tag__not_in&quot;:&quot;&quot;,&quot;tag_slug__and&quot;:&quot;&quot;,&quot;tag_slug__in&quot;:&quot;&quot;,&quot;cat&quot;:&quot;&quot;,&quot;category_name&quot;:0,&quot;category__and&quot;:&quot;&quot;,&quot;category__in&quot;:&quot;&quot;,&quot;category__not_in&quot;:&quot;&quot;,&quot;tax_compare&quot;:&quot;AND&quot;,&quot;categoryselector&quot;:&quot;true&quot;,&quot;show_thumbnail&quot;:&quot;true&quot;,&quot;show_content&quot;:&quot;true&quot;,&quot;author__in&quot;:&quot;&quot;,&quot;col&quot;:3,&quot;progress_bar&quot;:&quot;true&quot;,&quot;array&quot;:false,&quot;course_grid&quot;:&quot;true&quot;,&quot;thumb_size&quot;:&quot;course-thumb&quot;,&quot;course_categoryselector&quot;:&quot;&quot;,&quot;course_cat&quot;:&quot;&quot;,&quot;course_category_name&quot;:&quot;&quot;,&quot;course_category__and&quot;:&quot;&quot;,&quot;course_category__in&quot;:&quot;&quot;,&quot;course_category__not_in&quot;:&quot;&quot;,&quot;course_tag&quot;:&quot;&quot;,&quot;course_tag_id&quot;:&quot;&quot;,&quot;course_tag__and&quot;:&quot;&quot;,&quot;course_tag__in&quot;:&quot;&quot;,&quot;course_tag__not_in&quot;:&quot;&quot;,&quot;course_tag_slug__and&quot;:&quot;&quot;,&quot;course_tag_slug__in&quot;:&quot;&quot;}"><div class="ld-course-list-items row"><div class="ld_course_grid col-sm-8 col-md-4 ">
+	<article id="post-66" class="thumbnail course post-66 sfwd-courses type-sfwd-courses status-publish has-post-thumbnail hentry has-post-title has-post-date has-post-category has-post-tag has-post-comment has-post-author ">
+	
+				
+
+						<div class="ld_course_grid_price price_$">
+				$20			</div>
+			
+						<a href="https://burnado.github.io/home/courses/social-media-marketing/" rel="bookmark">
+				<img width="400" height="215" src="https://burnado.github.io/home/wp-content/uploads/2020/02/527018_33230085016154t8_281891199_nn-400x215.png" class="attachment-course-thumb size-course-thumb wp-post-image" alt="" srcset="https://burnado.github.io/home/wp-content/uploads/2020/02/527018_33230085016154t8_281891199_nn-400x215.png 400w, https://burnado.github.io/home/wp-content/uploads/2020/02/527018_33230085016154t8_281891199_nn-300x161.png 300w, https://burnado.github.io/home/wp-content/uploads/2020/02/527018_33230085016154t8_281891199_nn-1024x549.png 1024w, https://burnado.github.io/home/wp-content/uploads/2020/02/527018_33230085016154t8_281891199_nn-768x412.png 768w, https://burnado.github.io/home/wp-content/uploads/2020/02/527018_33230085016154t8_281891199_nn.png 1400w" sizes="(max-width: 400px) 100vw, 400px" />			</a>
+					
+					
+			<div class="caption">
+				<h3 class="entry-title">Social Media Marketing</h3>
+								<p class="ld_course_grid_button"><a class="btn btn-primary" role="button" href="https://burnado.github.io/home/courses/social-media-marketing/" rel="bookmark">See more...</a></p>
+								<div class="learndash-wrapper learndash-widget">
+        <div class="ld-progress ld-progress-inline">
+                    <div class="ld-progress-heading">
+                                <div class="ld-progress-stats">
+                    <div class="ld-progress-percentage ld-secondary-color">0% Complete</div>
+                    <div class="ld-progress-steps">
+                        0/1 Steps                    </div>
+                </div> <!--/.ld-progress-stats-->
+            </div>
+
+            <div class="ld-progress-bar">
+                <div class="ld-progress-bar-percentage ld-secondary-background" style="width:0%"></div>
+            </div>
+                </div> <!--/.ld-progress-->
+</div>
+							</div><!-- .entry-header -->
+			</article><!-- #post-## -->
+</div>
+</div></div><br style='clear:both'></p></div></div></div></div><!-- /module widget -->	        </div>
+	    	</div>
+		    </div>
+	    <!-- /row_inner -->
+	</div>
+	<!-- /module_row -->
 	</div>
 
 
@@ -344,6 +577,13 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/burnado.github.io\/home\/wp-json\/
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://burnado.github.io/home/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.6'></script>
+<script type='text/javascript' src='https://burnado.github.io/home/wp-content/plugins/sfwd-lms/themes/legacy/templates/learndash_pager.min.js?ver=3.0.6.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sfwd_data = {"json":"{\"ajaxurl\":\"http:\\\/\\\/localhost\\\/home\\\/wp-admin\\\/admin-ajax.php\"}"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://burnado.github.io/home/wp-content/plugins/sfwd-lms/themes/legacy/templates/learndash_template_script.min.js?ver=3.0.6.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var ajaxurl = "https:\/\/burnado.github.io\/home\/wp-admin\/admin-ajax.php";
@@ -354,7 +594,7 @@ var ldVars = {"postID":"13","videoReqMsg":"You must watch the video before acces
 <script type='text/javascript' defer="defer" src='https://burnado.github.io/home/wp-content/themes/themify-ultra/themify/js/themify.sidemenu.min.js?ver=2.6.6'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var themifyScript = {"themeURI":"https:\/\/burnado.github.io\/home\/wp-content\/themes\/themify-ultra","lightbox":{"lightboxSelector":".themify_lightbox","lightboxOn":true,"lightboxContentImages":false,"lightboxContentImagesSelector":"","theme":"pp_default","social_tools":false,"allow_resize":true,"show_title":false,"overlay_gallery":false,"screenWidthNoLightbox":600,"deeplinking":false,"contentImagesAreas":"","gallerySelector":".gallery-icon > a","lightboxGalleryOn":true},"fixedHeader":"fixed-header","sticky_header":"","ajax_nonce":"51f77b90e6","ajax_url":"https:\/\/burnado.github.io\/home\/wp-admin\/admin-ajax.php","parallaxHeader":"1","pageLoaderEffect":"","infiniteEnable":"0","fullPageScroll":"","shop_masonry":"no","responsiveBreakpoints":{"tablet_landscape":"1280","tablet":"768","mobile":"680"}};
+var themifyScript = {"themeURI":"https:\/\/burnado.github.io\/home\/wp-content\/themes\/themify-ultra","lightbox":{"lightboxSelector":".themify_lightbox","lightboxOn":true,"lightboxContentImages":false,"lightboxContentImagesSelector":"","theme":"pp_default","social_tools":false,"allow_resize":true,"show_title":false,"overlay_gallery":false,"screenWidthNoLightbox":600,"deeplinking":false,"contentImagesAreas":"","gallerySelector":".gallery-icon > a","lightboxGalleryOn":true},"fixedHeader":"fixed-header","sticky_header":"","ajax_nonce":"4bf3db9609","ajax_url":"https:\/\/burnado.github.io\/home\/wp-admin\/admin-ajax.php","parallaxHeader":"1","pageLoaderEffect":"","infiniteEnable":"0","fullPageScroll":"","shop_masonry":"no","responsiveBreakpoints":{"tablet_landscape":"1280","tablet":"768","mobile":"680"}};
 /* ]]> */
 </script>
 <script type='text/javascript' defer="defer" src='https://burnado.github.io/home/wp-content/themes/themify-ultra/js/themify.script.min.js?ver=2.6.6'></script>
