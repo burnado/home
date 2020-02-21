@@ -1,0 +1,22 @@
+@mixin fieldhelpers-col() {
+  box-sizing: border-box;
+  padding: 0.5em;
+  float: left;
+}
+
+.fieldhelpers-col {
+  @include fieldhelpers-col();
+}
+
+@for $i from 1 through 5 {
+
+  .fieldhelpers-col-#{$i} {
+
+    @include fieldhelpers-col();
+    width: #{100 / $i}#{"%"};
+
+    @media only screen and (max-width: 640px) {
+      width: 100%;
+    }
+  }
+}

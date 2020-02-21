@@ -1,0 +1,34 @@
+.fieldhelpers-field-table {
+
+  .fieldhelpers-field-table-loading {
+    text-align: center;
+
+    .spinner {
+      float: none;
+      display: inline-block;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 5px;
+  }
+
+  thead {
+    input[type="text"] {
+      background: #fff78a;
+    }
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .fieldhelpers-field-table-delete-columns {
+    text-align: center;
+  }
+}

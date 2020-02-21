@@ -1,0 +1,11 @@
+.fieldhelpers-field-colorpicker {
+  position: relative;
+
+  .wp-picker-holder {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    box-shadow: 5px 5px 30px rgba(#000, 0.5);
+    z-index: 100;
+  }
+}

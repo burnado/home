@@ -1,0 +1,74 @@
+.fieldhelpers-field-number {
+  .fieldhelpers-field-number-container {
+    width: 100px;
+
+    &[data-postfix] {
+      position: relative;
+
+      &:after {
+        content: attr(data-postfix);
+        position: absolute;
+        right: calc(20px + 0.5em);
+        top: 50%;
+        color: #aaa;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  // Excessive selector because WP tries to change it for mobile
+  input[type="text"].fieldhelpers-field-input {
+    height: 40px;
+    line-height: 40px;
+    width: 80px;
+    padding: 0;
+    margin: 0;
+    float: left;
+    text-align: center;
+  }
+
+  .fieldhelpers-field-number-increase, .fieldhelpers-field-number-decrease {
+    display: block;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    padding: 0;
+    font-size: 14px;
+    color: #fff;
+    background: $primary-color;
+    border: 1px solid darken($primary-color, 5%);
+    box-shadow: 0 1px 0 darken($primary-color, 5%);
+    outline: none;
+    border-radius: 0;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+      background: lighten($primary-color, 5%);
+      border-color: $primary-color;
+      box-shadow: 0 1px 0 $primary-color;
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+
+    .dashicons {
+      font-size: inherit;
+      line-height: inherit;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .fieldhelpers-field-number-increase {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-width: 0;
+  }
+
+  .fieldhelpers-field-number-decrease {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}
